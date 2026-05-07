@@ -67,7 +67,7 @@ src/
 ```bash
 npm install
 npm run dev          # Vite (5173 dentro del container, 5174 en host)
-npm test             # 25 specs
+npm test             # 32 specs
 npm run typecheck
 npm run build
 npm run coverage     # con thresholds 80/70

@@ -34,7 +34,7 @@ SPA React 19 + Vite + TypeScript estricto. Stack:
 ```bash
 npm install
 npm run dev          # 5173 dentro del container, 5174 en host
-npm test             # 25 specs
+npm test             # 32 specs
 npm run typecheck
 npm run build
 npm run coverage     # thresholds 80/70
