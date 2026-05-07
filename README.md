@@ -19,7 +19,7 @@ SPA React 19 + Vite + TypeScript que cubre las 5 rutas operativas del brief con 
 ```bash
 npm install
 npm run dev          # Vite en :5173
-npm test             # 25 specs
+npm test             # 32 specs
 npm run typecheck    # tsc --noEmit
 npm run build        # tsc + vite build
 npm run coverage     # con thresholds 80/70
