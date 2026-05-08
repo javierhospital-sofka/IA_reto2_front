@@ -42,10 +42,11 @@ npm run coverage     # thresholds 80/70
 
 ## Antes de tocar código
 
-1. Leer la spec en `../.github/specs/<feature>.spec.md`.
-2. Leer este `CLAUDE.md` y [`AGENTS.md`](AGENTS.md).
-3. Identificar la ruta o componente owner.
-4. Planear tests con Testing Library + mocks del API client.
+1. Leer la spec global en `../.github/specs/<feature>.spec.md` (autoridad cross-stack).
+2. Leer la spec slice frontend en [`specs/<feature>.spec.md`](specs/) — criterios sufijados `-FE`.
+3. Leer este `CLAUDE.md` y [`AGENTS.md`](AGENTS.md).
+4. Identificar la ruta o componente owner.
+5. Planear tests con Testing Library + mocks del API client cubriendo `RI-X-FE`, `AT-X-FE`, `LR-X-FE`.
 
 ## Definition of Done
 
@@ -68,4 +69,8 @@ npm run coverage     # thresholds 80/70
 
 - [`README.md`](README.md)
 - [`AGENTS.md`](AGENTS.md)
-- `../.github/specs/retail-inventory.spec.md`
+- [`specs/README.md`](specs/README.md) — índice de specs slice frontend
+- [`specs/retail-inventory-ui.spec.md`](specs/retail-inventory-ui.spec.md) — slice frontend del flujo principal
+- [`specs/auth-bearer-token.spec.md`](specs/auth-bearer-token.spec.md) — slice frontend de auth
+- [`specs/local-docker-runtime.spec.md`](specs/local-docker-runtime.spec.md) — slice frontend del runtime
+- `../.github/specs/` — specs globales / cross-stack (autoridad)
